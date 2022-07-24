@@ -1,0 +1,24 @@
+{
+  "name": "p03.-podcastfmbootstrapsass",
+  "version": "1.0.0",
+  "description": "Bootstrap 5 SASS y Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuelDevWeb/PodcastFM_Bootstrap5_SASS-.git"
+  },
+  "author": "Manuel Valencia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManuelDevWeb/PodcastFM_Bootstrap5_SASS-/issues"
+  },
+  "homepage": "https://github.com/ManuelDevWeb/PodcastFM_Bootstrap5_SASS-#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.0"
+  }
+}

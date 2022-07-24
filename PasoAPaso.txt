@@ -1,0 +1,17 @@
+🟢 Configuracion Inicial del Proyecto
+
+1. Inicializar proyecto: npm init
+
+2. Instalar sass: npm i -D sass gulp-sass
+
+🟢 Gulp
+
+3. Instalar gulp (Compilar hojas de estilos y guardarla en otro lugar): npm i -D gulp
+
+4. Instalar gulp globalmente: npm i -g gulp-cli
+
+5. Crear el archivo: gulpfile.js
+
+6. Compilar tarea creada en el archivo gulpfile: gulp dev (dev es el nombre de la tarea)
+
+7. 
