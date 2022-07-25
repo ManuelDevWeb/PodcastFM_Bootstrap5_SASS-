@@ -1,7 +1,9 @@
 // Importando gulp
-const { src, dest, watch } = require("gulp");
+const { src, dest, watch, series } = require("gulp");
 // Importando gulp sass
 const sass = require("gulp-sass")(require("sass"));
+// Importando imagenmin
+const imagenmin = require("gulp-imagemin");
 
 // Funcion que compila codigo de SASS
 function css(done) {
@@ -11,6 +13,18 @@ function css(done) {
     .pipe(sass())
     // Exportarlo o guardarlo en una ubicacion
     .pipe(dest("build/css"));
+
+  done();
+}
+
+// Funcion para aligerar la carga de imagenes
+function imagenes(done) {
+  // Ubicacion de nuestras imagenes
+  src("src/img/**/*")
+    // Minificamos imagenes
+    .pipe(imagenmin({ optimizationLevel: 3 }))
+    // Exportarlo o guardarlo en una ubicacion
+    .pipe(dest("build/img"));
 
   done();
 }
@@ -26,3 +40,6 @@ function dev() {
 // Para ejecutar la tarea abrir cmd y correr: gulp (nombre tarea exportada) -> gulp css
 exports.css = css;
 exports.dev = dev;
+exports.imagenes = imagenes;
+// Ejecutar por defecto multiples tareas, para correr ejecutar: gulp
+exports.default = series(imagenes, css, dev);

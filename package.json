@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/ManuelDevWeb/PodcastFM_Bootstrap5_SASS-#readme",
   "devDependencies": {
+    "bootstrap": "^5.2.0",
     "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.54.0"
   }

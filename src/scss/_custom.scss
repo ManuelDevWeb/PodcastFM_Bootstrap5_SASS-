@@ -1,0 +1,15 @@
+// Paletas de colores
+$verde: #84d9bc;
+$gris: #313c4e;
+
+$primary: $verde;
+$secondary: $gris;
+
+// Tipografia
+$headings-font-family: "Poppins", sans-serif;
+$headings-font-weight: 700;
+$font-family-sans-serif: "Poppins", sans-serif;
+$font-family-monospace: "Poppins", sans-serif;
+
+// Importando todo bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

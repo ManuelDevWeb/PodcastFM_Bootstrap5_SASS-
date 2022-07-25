@@ -1,0 +1,4 @@
+// _header.scss (_ Indica que se importara en otro archivo)
+
+// Importando archivo _custom.scss (Use compila el archivo)
+@use "../custom" as *;

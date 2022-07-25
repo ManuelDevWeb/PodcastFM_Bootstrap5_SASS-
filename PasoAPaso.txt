@@ -4,14 +4,31 @@
 
 2. Instalar sass: npm i -D sass gulp-sass
 
+3. Instalar Bootstrap: npm i -D bootstrap
+
+4. Crear la carpeta: src/scss/ui
+
+5. Crear el archivo: src/scss/ui/_index.scss
+
 🟢 Gulp
 
-3. Instalar gulp (Compilar hojas de estilos y guardarla en otro lugar): npm i -D gulp
+6. Instalar gulp (Compilar hojas de estilos y guardarla en otro lugar): npm i -D gulp
 
-4. Instalar gulp globalmente: npm i -g gulp-cli
+7. Instalar gulp globalmente: npm i -g gulp-cli
 
-5. Crear el archivo: gulpfile.js
+8. Crear el archivo: gulpfile.js
 
-6. Compilar tarea creada en el archivo gulpfile: gulp dev (dev es el nombre de la tarea)
+9. Instalar la dependencia: npm i -D gulp-imagemin@7.1.0
 
-7. 
+10. Compilar tarea creada en el archivo gulpfile: gulp dev (dev es el nombre de la tarea)
+
+11. Compilar tareas por defecto: gulp
+
+🟢 Header 
+
+12. Crear el archivo: src/sass/_custom.scss
+
+13. Crear la estructura del header en el archivo index.js
+
+14. Crear el archivo: src/scss/ui/_header.scss
+

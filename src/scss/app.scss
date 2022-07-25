@@ -1,5 +1,2 @@
-$rojo: red;
-
-body {
-  background-color: $rojo;
-}
+// Importando carpeta ui (Use compila el archivo)
+@use "ui";
