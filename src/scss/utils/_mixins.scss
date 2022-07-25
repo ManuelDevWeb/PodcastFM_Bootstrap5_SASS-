@@ -1,0 +1,13 @@
+// _mixins.scss (_ Indica que se importara en otro archivo)
+// Mixins son funciones
+
+@mixin bgImage($url, $color) {
+  background-image: linear-gradient(
+      transparentize($color, 0.3%) 0%,
+      $color 100%
+    ),
+    url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}

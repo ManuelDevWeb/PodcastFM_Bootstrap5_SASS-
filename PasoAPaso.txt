@@ -32,3 +32,9 @@
 
 14. Crear el archivo: src/scss/ui/_header.scss
 
+15. Crear la carpeta: src/sass/utils
+
+16. Crear el archivo: src/sass/utils/_mixins.scss
+
+17. Crear el archivo: src/sass/utils/_index.scss
+
