@@ -1,13 +1,13 @@
 // _header.scss (_ Indica que se importara en otro archivo)
 
 // Importando archivo _mixins.scss (Use compila el archivo)
-@use "utils" as *;
+@use "utils/mixins";
 // Importando archivo _custom.scss (Use compila el archivo)
 @use "../custom" as *;
 
 .site-header {
   // Incovando mixin bgImage
-  @include bgImage("../img/header.jpg", $secondary);
+  @include mixins.bgImage("../img/header.jpg", $secondary);
 
   .logo {
     max-width: 20rem;

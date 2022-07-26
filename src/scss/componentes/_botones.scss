@@ -10,11 +10,20 @@
     transparent,
     $secondary,
     darken($primary, 10%),
-    $secondary,
-    darken($primary, 10%),
     transparent,
     darken($secondary, 10%)
   );
 
-  @include button-size(1rem, 5rem, 2rem, 0);
+  @include button-size(2rem, 5rem, 2rem, 0);
+
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin-top: 1rem;
+
+  // Media que se aplica a partir de md
+  @include media-breakpoint-up(md) {
+    display: inline-block;
+  }
 }
