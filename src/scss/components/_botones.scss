@@ -1,0 +1,20 @@
+// _botones.scss (_ Indica que se importara en otro archivo)
+
+// Importando archivo _custom.scss (Use compila el archivo)
+@use "../custom" as *;
+
+.btn-header {
+  // Invocando funcion button-variant (Bg, Border, Color Texto, Hover...)
+  @include button-variant(
+    $primary,
+    transparent,
+    $secondary,
+    darken($primary, 10%),
+    $secondary,
+    darken($primary, 10%),
+    transparent,
+    darken($secondary, 10%)
+  );
+
+  @include button-size(1rem, 5rem, 2rem, 0);
+}

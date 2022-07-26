@@ -38,3 +38,9 @@
 
 17. Crear el archivo: src/sass/utils/_index.scss
 
+18. Crear la carpeta: src/sass/components
+
+19. Crear el archivo: src/sass/components/_botones.scss
+
+20. Crear el archivo: src/sass/components/_index.scss
+

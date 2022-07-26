@@ -1,6 +1,7 @@
 // _mixins.scss (_ Indica que se importara en otro archivo)
 // Mixins son funciones
 
+// Funcion imagen de fondo
 @mixin bgImage($url, $color) {
   background-image: linear-gradient(
       transparentize($color, 0.3%) 0%,

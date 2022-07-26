@@ -1,13 +1,13 @@
 // _header.scss (_ Indica que se importara en otro archivo)
 
 // Importando archivo _mixins.scss (Use compila el archivo)
-@use "utils/mixins";
+@use "utils" as *;
 // Importando archivo _custom.scss (Use compila el archivo)
 @use "../custom" as *;
 
 .site-header {
   // Incovando mixin bgImage
-  @include mixins.bgImage("../img/header.jpg", $secondary);
+  @include bgImage("../img/header.jpg", $secondary);
 
   .logo {
     max-width: 20rem;
@@ -32,10 +32,6 @@
     // Media que se aplica a partir de lg
     @include media-breakpoint-up(lg) {
       max-width: 38%;
-    }
-
-    // Media que se aplica a partir de lg
-    @include media-breakpoint-up(lg) {
       padding-top: 15rem;
       padding-bottom: 15rem;
     }
