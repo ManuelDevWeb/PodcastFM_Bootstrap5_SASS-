@@ -44,3 +44,8 @@
 
 20. Crear el archivo: src/sass/components/_index.scss
 
+🟢 Seccion Crea tu Podcast 
+
+21. Crear la estructura del header en el archivo index.js 
+
+22. Crear el archivo: src/scss/ui/_create.scss

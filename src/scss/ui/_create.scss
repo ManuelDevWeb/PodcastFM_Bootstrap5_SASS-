@@ -1,0 +1,13 @@
+// _create.scss (_ Indica que se importara en otro archivo)
+
+// Importando archivo _mixins.scss (Use compila el archivo)
+@use "utils/mixins" as m;
+// Importando archivo _custom.scss (Use compila el archivo)
+@use "../custom" as *;
+
+.create-podcast {
+  h2 {
+    // Invocando mixin headingBorder
+    @include m.headingBorder($secondary, $primary);
+  }
+}
