@@ -1,0 +1,26 @@
+// _benefits.scss (_ Indica que se importara en otro archivo)
+
+// Importando archivo _mixins.scss (Use compila el archivo)
+@use "utils/mixins" as m;
+// Importando archivo _custom.scss (Use compila el archivo)
+@use "../custom" as *;
+
+.benefits {
+  h2 {
+    // Invocando mixin headingBorder
+    @include m.headingBorder($secondary, $white);
+  }
+
+  .imagen {
+    @include media-breakpoint-up(md) {
+      // Invocando mixin transition de bootstrap
+      @include transition(transform 300ms ease);
+
+      // Aplicando transformacion al hacer hover
+      &:hover {
+        // Rotacion, crecimiento,
+        transform: rotate(8deg) scale(1.1);
+      }
+    }
+  }
+}
