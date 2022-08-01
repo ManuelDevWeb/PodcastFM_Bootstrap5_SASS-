@@ -28,7 +28,7 @@
 
 12. Crear el archivo: src/sass/_custom.scss
 
-13. Crear la estructura del header en el archivo index.js
+13. Crear la estructura del header en el archivo index.html
 
 14. Crear el archivo: src/scss/ui/_header.scss
 
@@ -46,12 +46,18 @@
 
 🟢 Seccion Crea tu Podcast 
 
-21. Crear la estructura de la seccion en el archivo index.js 
+21. Crear la estructura de la seccion en el archivo index.html
 
 22. Crear el archivo: src/scss/ui/_create.scss
 
 🟢 Seccion Beneficios
 
-23. Crear la estructura de la seccion en el archivo index.js 
+23. Crear la estructura de la seccion en el archivo index.html
 
 24. Crear el archivo: src/scss/ui/_benefits.scss
+
+🟢 Seccion Estadisticas
+
+24. Crear la estructura de la seccion en el archivo index.html
+
+25. Crear el archivo: src/scss/ui/_statistics.scss

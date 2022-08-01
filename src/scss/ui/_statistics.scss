@@ -1,0 +1,13 @@
+// _statistics.scss (_ Indica que se imporrta en otro archivo)
+
+// Importando archivo _mixins.scss (Use compila el archivo)
+@use "utils/mixins" as m;
+// Importando archivo _custom.scss (Use compila el archivo)
+@use "../custom" as *;
+
+.statistics {
+  h2 {
+    // Invocando mixin headingBorder
+    @include m.headingBorder($secondary, $primary);
+  }
+}
