@@ -16,6 +16,15 @@
   background-position: top center;
 }
 
+// Funcion para iconos
+@mixin bgIcon($url) {
+  background-image: url($url);
+  background-size: 10rem;
+  // 50% para centrar horizontalmente y 2 rem de espacio en vertical
+  background-position: 50% 2rem;
+  background-repeat: no-repeat;
+}
+
 // Funcion para los h2
 @mixin headingBorder($colorText, $colorBorder) {
   color: $colorText;

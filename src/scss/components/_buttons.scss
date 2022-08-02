@@ -27,3 +27,16 @@
     display: inline-block;
   }
 }
+
+.btn-plan {
+  // Hereando todo el css de btn-header
+  @extend .btn-header;
+  border: 1px solid $white;
+
+  @include button-size(2rem, 3rem, 2rem, 0);
+
+  // Media que se aplica a partir de md
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}

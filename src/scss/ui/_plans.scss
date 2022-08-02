@@ -1,0 +1,70 @@
+// _plans.scss (_ Indica que se importara en otro archivo)
+
+// Importando archivo _mixins.scss (Use compila el archivo)
+@use "utils/mixins" as m;
+// Importando archivo _custom.scss (Use compila el archivo)
+@use "../custom" as *;
+
+$separation: 5rem;
+
+.plans {
+  h2 {
+    // Invocando mixin headingBorder
+    @include m.headingBorder($white, $primary);
+  }
+}
+
+.plan {
+  padding: 16rem 4rem 4rem 4rem;
+  border-bottom: 1px solid #e1e1e1;
+
+  // Media que se aplica a partir de md
+  @include media-breakpoint-up(md) {
+    border: none;
+
+    // Invocando mixin transition de bootstrap
+    @include transition(transform 300ms ease);
+
+    // Aplicando transformacion al hacer hover
+    &:hover {
+      // Rotacion, crecimiento,
+      transform: scale(1.1);
+    }
+  }
+
+  .price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  // & Significa que las clases estan en un mismo elemento
+  &.start {
+    // Incovando mixin bgIcon
+    @include m.bgIcon("../img/icono_inicio.svg");
+  }
+
+  // & Significa que las clases estan en un mismo elemento
+  &.business {
+    // Incovando mixin bgIcon
+    @include m.bgIcon("../img/icono_negocio.svg");
+
+    // Media que se aplica a partir de md
+    @include media-breakpoint-up(md) {
+      margin-top: -#{$separation};
+      margin-bottom: -#{$separation};
+      border-radius: 2rem;
+      z-index: 100;
+      // Al padding de 16rem de las cards, le agregamos los 5 del margin top negativo
+      padding-top: calc(16rem + #{$separation});
+      // Al padding definido en el mixin bgIcon, le agregamos los 5 del margin top negativo
+      background-position-y: calc(2rem + #{$separation});
+    }
+  }
+
+  // & Significa que las clases estan en un mismo elemento
+  &.pro {
+    // Incovando mixin bgIcon
+    @include m.bgIcon("../img/icono_pro.svg");
+  }
+}

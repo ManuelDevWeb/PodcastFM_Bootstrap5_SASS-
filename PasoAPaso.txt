@@ -65,3 +65,5 @@
 🟢 Seccion Plans
 
 27. Crear la estructura de la seccion en el archivo index.html 
+
+28. Crear el archivo: src/scss/ui/_plans.scss 
