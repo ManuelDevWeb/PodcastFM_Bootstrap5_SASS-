@@ -58,6 +58,10 @@
 
 🟢 Seccion Estadisticas
 
-24. Crear la estructura de la seccion en el archivo index.html
+25. Crear la estructura de la seccion en el archivo index.html
 
-25. Crear el archivo: src/scss/ui/_statistics.scss
+26. Crear el archivo: src/scss/ui/_statistics.scss
+
+🟢 Seccion Plans
+
+27. Crear la estructura de la seccion en el archivo index.html 
