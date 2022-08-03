@@ -73,3 +73,17 @@
 29. Crear la estructura de la seccion en el archivo index.html 
 
 30. Crear el archivo: src/scss/ui/_testimonials.scss
+
+🟢 Footer
+
+31. Crear la estructura del footer en el archivo index.html 
+
+32. Crear el archivo: src/scss/ui/_footer.scss 
+
+🟢 Preparar proyecto para produccion
+
+33. Instalar las dependencias: npm i --save-dev gulp-purgecss gulp-rename
+
+34. Agregar la funcion cssbuild y export.build en: gulpfile.js 
+
+35. Modificar la ruta del css del index.html
