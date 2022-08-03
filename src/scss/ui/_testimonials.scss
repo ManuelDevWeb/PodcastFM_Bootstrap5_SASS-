@@ -1,0 +1,35 @@
+// _testimonials.scss (_ Indica que se importara en otro archivo)
+
+// Importando archivo _mixins.scss (Use compila el archivo)
+@use "utils/mixins" as m;
+// Importando archivo _custom.scss (Use compila el archivo)
+@use "../custom" as *;
+
+.testimonials {
+  h2 {
+    // Invocando mixin headingBorder
+    @include m.headingBorder($secondary, $primary);
+  }
+}
+
+.testimonial {
+  border: 0.5rem solid $secondary;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  padding: 2rem 2rem 2rem 6rem;
+  position: relative;
+
+  // Pseudo selector para la comilla
+  &::before {
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    background-image: url(../img/comilla.svg);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    left: 0.5rem;
+  }
+}

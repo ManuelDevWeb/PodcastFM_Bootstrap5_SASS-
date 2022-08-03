@@ -67,3 +67,9 @@
 27. Crear la estructura de la seccion en el archivo index.html 
 
 28. Crear el archivo: src/scss/ui/_plans.scss 
+
+🟢 Seccion Testimonials
+
+29. Crear la estructura de la seccion en el archivo index.html 
+
+30. Crear el archivo: src/scss/ui/_testimonials.scss
